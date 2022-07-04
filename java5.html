@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>from template literals</title>
+        <link>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p id="c1"></p>
+        <p id="c2"></p>
+        <p id="c3"></p>
+        <p id="c4"></p>
+        <p id="c5"></p>
+        <p id="demo"></p>
+
+        <script>
+            let x = "john";
+            let y = "doe";
+            let text = `hello there ${x} ${y}`;
+            document.getElementById('c1').innerHTML=text;
+            let a= 100;
+            let b = NaN;
+            document.getElementById('c2').innerHTML=a/b;
+            let c=2;
+            let txt= "";
+            while (c != Infinity){
+                c = c*c;
+                txt= txt + c +"<br>";
+            }
+            document.getElementById('demo').innerHTML=txt;
+            let d=0xee;
+            document.getElementById('c3').innerHTML=d;
+            let e=238;
+            document.getElementById('c4').innerHTML=e.toString(16);
+        </script>
+        
+    </body>
+</html>

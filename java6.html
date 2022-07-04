@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>From js number methods</title>
+    <link>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <p id="c1"></p>
+    <p id="c2"></p>
+    <p id="c3"></p>
+    <p id="c4"></p>
+    <p id="c5"></p>
+    <p id="c6"></p>
+    <p id="c7"></p>
+    <p id="c8"></p>
+    <p id="c9"></p>
+    <p id="c10"></p>
+    <p id="c11"></p>
+    <p id="c12"></p>
+    <p id="c13"></p>
+
+    <script>
+        let x = 123;
+        let obj = new Number(123);
+        document.getElementById('c1').innerHTML = typeof (obj);
+        document.getElementById('c2').innerHTML = x.toExponential(2);
+        document.getElementById('c3').innerHTML = typeof (obj.toExponential(2));
+        document.getElementById('c4').innerHTML = obj.toExponential(2);
+        let y = 3.1416789;
+        document.getElementById('c5').innerHTML = y.toPrecision(4);
+        document.getElementById('c6').innerHTML = parseInt(y);
+        document.getElementById('c7').innerHTML = Number.MAX_VALUE;
+        const ar = [3, 4, 5];
+        document.getElementById('c8').innerHTML = typeof (ar);
+        const arr = new Array("sub", "vespa", "cycle");
+        document.getElementById('c9').innerHTML = typeof (arr);
+        const a = [1, 2, 3, 4];
+        a.push(5);
+        let z = "";
+        for (let i = 0; i < a.length; i++) {
+            z += a[i] + ", ";
+
+        }
+        document.getElementById('c10').innerHTML = z;
+        document.getElementById('c11').innerHTML = typeof (a);
+        document.getElementById('c12').innerHTML = Array.isArray(a);
+    </script>
+</body>
+
+</html>

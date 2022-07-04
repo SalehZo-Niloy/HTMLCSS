@@ -1,0 +1,46 @@
+h3{ color: aliceblue;
+    border: 1px solid rgb(177, 150, 1);
+    text-align: center;
+    padding: 10px;
+    margin: 100px;
+    font-size: 18px;}
+a:link{
+    color: darkgoldenrod;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(218, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 76, 218);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active{
+    color: rgb(0, 141, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+.boys{
+    text-align: center;
+    font-size: 24px;
+}
+#aa{
+    text-align: center;
+}
+.another:link, .another:visited{
+    background-color: yellow;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+.another:hover, .another:active{
+    background-color: red;
+
+}

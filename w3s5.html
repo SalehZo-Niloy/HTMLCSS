@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>From Iframe</title>
+        <!--<meta http-equiv="refresh" content="30">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            iframe{
+                height: 500px;
+                width: 1000px;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <iframe src="w3s1.html" title="Kurt's page"></iframe>
+        </p>
+        <p>
+            <iframe src="demo_iframe.html" name="tar" title="Iframe from link"></iframe>
+            <br><a href="w3s2.html" target="tar">Show boys page</a>
+
+        </p>
+        <p id="aa"></p>
+        <script>
+            document.getElementById("aa").innerHTML="JavaScript: First time?";
+            document.getElementById("aa").style.fontSize="25px";
+            document.getElementById("aa").style.color="green";
+        </script>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link>
+        
+        <style>
+            #c3{
+                display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <script src='script.js'></script>
+        <p id="c4">let's try js</p>
+
+        <button onclick="document.getElementById('c4').innerHTML='let&lsquo;s try javascript'">click</button>
+        <br>
+        <button onclick="document.getElementById('c3').style.display='block'">click</button>
+        <div id="c3"><button onclick="document.getElementById('bulb').src='https://www.w3schools.com/js/pic_bulboff.gif'">Switch Off</button>
+        <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif">
+        <button onclick="document.getElementById('bulb').src='https://www.w3schools.com/js/pic_bulbon.gif' ">Switch On</button><br>
+        </div>
+        <!--<script>
+            function change(){
+                document.getElementById('c5').innerHTML='paragraph changed';
+            }
+        </script>-->
+        <div>
+            <p id="c5">this in a paragraph</p>
+            <button onclick="change()">Try it</button>
+
+            <script>
+                document.write(5+6);
+            </script>
+            
+        </div>
+        <!-- <button onclick="document.write('hey')">try</button> -->
+        <script>
+            /*console.log("hello there");*/
+            alert(5+6);
+        </script>
+    </body>
+</html>

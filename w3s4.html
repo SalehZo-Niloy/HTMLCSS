@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>From html table</title>
+        <style>
+            table,th,td{
+                
+            }
+            th, td{
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-bottom: 1px solid red;
+            }
+            tr:nth-child(even){
+                background-color: rgba(150, 212, 212, 0.4);
+            }
+            th:nth-child(even),td:nth-child(even){
+                background-color: rgba(150, 212, 212, 0.4);
+            }
+            table{
+                border-spacing: 8px;
+            }
+            .city{
+                background-color: brown;
+                color: blue;
+                padding: 8px;
+            }
+            .main{
+                text-align: center;
+            }
+            tr:hover{
+                background-color: aqua;
+            }
+            div{
+                overflow-x: auto;
+            }
+            .he{
+                display: none;
+                padding: 20px;
+                background-color: aqua;
+            }
+            .hey:hover .he{
+                display: block;
+                color: aqua;
+
+            }
+            .alo .ne{
+                display: none;
+            }
+            .alo:hover .ne{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+       <div><table style="width: 100%;">
+            <caption>monthly expenses</caption>
+            <colgroup>
+                <col span="2">
+                <col span="1" style="background-color: yellow;">
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>1st week</th>
+                <th>2nd week</th>
+                <th colspan="2">3rd+4th week</th>
+            </tr>
+            <tr>
+                <th>January</th>
+                <td>100tk</td>
+                <td>200tk</td>
+                <td>150tk</td>
+                <td>150tk</td>
+            </tr>
+            <tr>
+                <th>February</th>
+                <td>50tk</td>
+                <td>100tk</td>
+                <td>300tk</td>
+                <td>200tk</td>
+            </tr>
+        </table></div>
+        <p>
+            <ol type="i">
+                <li>dev work</li>
+                <li>paper work</li>
+                <li>gre
+                    <ul style="list-style-type:disc     ">
+                        <li>gre math</li>
+                        <li>gre voca</li>
+                    </ul>
+                </li>
+
+            </ol>
+            <div class="hey">hover over me to unlock descriptive list.
+            <dl class="he">
+                <dt>Star Wars main triology</dt>
+                <dd>-Episode iv</dd>
+                <dd>-Episode v <span style="color: blue;">Empire Strikes Back</span> (My Fav)</dd>
+                <dd>-Episode vi</dd>
+                <dt>Star Wars prequel triology</dt>
+                <dd>-Episode i</dd>
+                <dd>-Episode ii</dd>
+                <dd>-Episode iii</dd>
+            </dl>
+        </div>
+        </p>
+        <p>
+            <h2 class="city main">Munich</h2>
+            <h2 class="city">Barcelona</h2>
+            <h2 class="city">Liverpool</h2>
+        </p>
+        <div class="alo">hover me then<dl class="ne">
+            <dt>I am feeling so low</dt>
+
+            </dl></div>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>from js statements</title>
+        <link>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p id="c1"></p>
+        <p id="c2"></p>
+        <p id="c3"></p>
+        <p id="c4"></p>
+        <p id="c5"></p>
+        <p id="c6"></p>
+        <script>
+            var a, b, c, d, e=2;
+            a = 10;
+            b = 5;
+            c = a+b;
+            e**=b
+            d = "volvo";
+            var d;
+            document.getElementById('c1').innerHTML=c;
+            document.getElementById('c2').innerHTML=d;
+            try{const pi=3.1416;
+            pi=3.14;}
+            catch(err){
+            document.getElementById('c3').innerHTML="there is an error";
+            }
+            const arr=[ "hey", "there"];
+            document.getElementById('c4').innerHTML=arr[0]+" "+arr[1];
+            arr[0]= "hello";
+            const obj={type:"car",color:"red"}
+            obj.color="green";
+            document.getElementById('c5').innerHTML=obj.type+" "+obj.color;
+            document.getElementById('c6').innerHTML=e;
+        </script>
+    </body>
+</html>

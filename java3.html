@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>from functions</title>
+        <link>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+        <p> if we multiply 10 by 5 we get <span id="c1"></span></p>
+        <p id="c2"></p>
+        <script>
+            function hey(a,b){
+                return a*b;
+            }
+            document.getElementById('c1').innerHTML=hey(10,5);
+            const guitar={type:"les paul", 
+            brand:"Gibson", 
+            rose:"fixed, no floyd",
+            fullname: function(){
+                return this.type+" "+this.brand+" "+this.rose
+            }    
+        };
+        document.getElementById('c2').innerHTML=guitar.fullname();
+
+
+        </script>
+    </body>
+</html>

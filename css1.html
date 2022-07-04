@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>From background</title>
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+        -->
+            <style>
+            h1{
+                background-color: aqua;
+                color: black;
+                opacity: .5;
+            }
+            .obi{
+                background-image: url(data:image/jpeg;base64,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);
+                background-repeat: no-repeat;
+                background-position: right top;
+                background-attachment: scroll;
+            }
+            .wan{
+                background: url(https://c.tenor.com/C1cWvpFw-VMAAAAS/star-wars-obi-wan-kenobi.gif) repeat-x;
+                color: white;
+                text-align: center;
+            }
+            .darth{
+                /*width: 1000px;*/
+                box-sizing: border-box;
+                padding: 20px;
+                color: black;
+                font-weight: 700;
+                background-color: rgba(255,0,.0, .7);
+                border-left: 10px solid red ;
+                border-right: 5px dotted rgba(255,0,.0, .7) ;
+                border-top: 5px dotted rgba(255,0,.0, .7) ;
+                border-bottom: 5px dotted rgba(255,0,.0, .7) ;
+            }
+            .main{
+                margin-left: 50px;
+            }
+            .vader{
+                max-width: 700px;
+            }
+            .creep{
+                color: black;
+                text-align: center;
+                padding: 10px;
+                border: 2px solid black;
+                outline: 20px solid rgb(0, 255, 128);
+                width: 500px;
+                margin: 50px auto 50px;
+            }
+            .sanchez{
+                letter-spacing: 1px;
+                word-spacing: 10px;
+                text-align: center;
+                text-decoration: overline underline rgb(233, 29, 131) double 3px;
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+                padding: 10px;
+                text-shadow: 5px 5px 4px rgb(26, 26, 247);
+                background-color: rgb(40, 41, 43);
+                width: 560px;
+                margin: auto;
+            }
+            body{
+                /*background-color: rgb(32, 30, 30);*/
+            }
+            .vpwd{
+                font: 15vw helvetica;
+            }
+            a{
+                font-size: 20px;
+                border: 2px solid black;
+                text-decoration: none;
+                padding: 5px;
+                font-weight: bold;
+                border-radius: 25%;
+            }
+            a.on:link, a.on:visited{
+                background-color: red;
+                color: black;
+
+            }
+            a.on:hover, a.on:active{
+                background-color: blue;
+                color: aliceblue;
+
+            }
+            ul{
+                list-style-image: url(https://icons.iconarchive.com/icons/blackvariant/button-ui-requests-5/16/ToDo-List-icon.png);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Cascading Style Sheet</h1>
+        <pre><p class="obi">Hello there
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+
+        </p></pre>
+        <pre><p class="wan">
+
+
+I'm Sorry Anakin
+        </p></pre>
+        <p class="darth">
+            You didn't killed Anakin. I did.
+        </p>
+        <p class="main">Testing margin</p>
+        <p class="darth vader"> testing max width</p>
+        <p class="creep">
+            your so f**** special,I wish I was special&#128532
+        </p>
+        <p class="sanchez">I would never fall in love, if I don't have her&#128531</p>
+        <p class="vpwd">Hello there </p>
+        <i class="bi bi-heart"></i>
+        <a class="on" href="https://www.imdb.com/title/tt8466564/" title="series imdb link">Goto Obi-Wan imdb</a>
+        <ul>
+            <li>coffee</li>
+            <li>mug</li>
+            <li>tea</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Js array methods</title>
+    <link>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <p id="c1"></p>
+    <p id="c2"></p>
+    <p id="c3"></p>
+    <p id="c4"></p>
+    <p id="c5"></p>
+    <p id="c6"></p>
+    <p id="c7"></p>
+    <button onclick="mf1()">sort alpa</button>
+    <button onclick="mf2()">sort num</button>
+    <p id="c8"></p>
+    <p id="c9"></p>
+    <p id="c10"></p>
+    <p id="c11"></p>
+    <p id="c12"></p>
+    <p id="c13"></p>
+    <p id="c14"></p>
+
+    <script>
+        const ar = ["mouse", "keyboard", "monitor", "soundbox"];
+        const a = ar.shift();
+        ar.push(a);
+        document.getElementById('c1').innerHTML = ar;
+        const arr = ["mouse", "keyboard", "monitor", "soundbox", "cpu"];
+        //arr.pop();
+        //delete arr[3];
+        arr.splice(1, 0, "game pad")
+        document.getElementById('c2').innerHTML = arr;
+        const b = arr.slice(1, 5);
+        document.getElementById('c3').innerHTML = b;
+        b.splice(2, 1);
+        document.getElementById('c4').innerHTML = b;
+        document.getElementById('c5').innerHTML = b[2];
+
+        const n = [50, 64, 4, 9, 89, 165];
+        /*n.sort(function (a, b) {return a - b });
+        n.reverse();
+        document.getElementById('c6').innerHTML = n;
+        document.getElementById('c7').innerHTML = Math.max.apply(null, n);*/
+        document.getElementById('c8').innerHTML = n;
+
+        /*function mf1() {
+            n.sort();
+            document.getElementById('c8').innerHTML = n;
+        }
+        function mf2() {
+            n.sort(function (a, b) { return a - b });
+            document.getElementById('c8').innerHTML = n;
+        }*/
+        let len = n.length;
+        let x = -Infinity;
+        function mf3() {
+            while (len--) {
+                if (n[len] > x) {
+                    x = n[len];
+
+                }
+                return x;
+            }
+        }
+        document.getElementById('c9').innerHTML = mf3();
+        const cars = [
+            { type: "Volvo", year: 2016 },
+            { type: "Saab", year: 2001 },
+            { type: "BMW", year: 2010 }
+        ];
+        cars.sort(function (a, b) { return a.year - b.year });
+        dspcars();
+
+        function dspcars() {
+            document.getElementById("c10").innerHTML =
+                cars[0].type + " " + cars[0].year + "<br>" +
+                cars[1].type + " " + cars[1].year + "<br>" +
+                cars[2].type + " " + cars[2].year;
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

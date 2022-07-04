@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>from js strings</title>
+        <link>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+        <p id="c1"></p>
+        <p id="c2"></p>
+        <p id="c3"></p>
+        <p id="c4"></p>
+        <p id="c5"></p>
+        <p id="c6"></p>
+        <p id="c7"></p>
+        <p id="c8"></p>
+        <p id="c9"></p>
+        <p id="c10"></p>
+        <p id="c11"></p>
+        <p id="c12"></p>
+        <p id="c13"></p>
+        <p id="c14"></p>
+        <p id="c15"></p>
+
+        <script>
+            document.getElementById('c1').innerHTML=
+            "hello \"there\"";
+            let s="obi";
+            let y=new String("obi");
+            document.getElementById('c2').innerHTML=
+            typeof s+ "<br>"+ typeof y;
+            document.getElementById('c3').innerHTML=
+            (s===y);
+            let x="ekhane shukhe moner jhore kew to vije na shukhe shukhe jay na na na!!!";
+            document.getElementById('c4').innerHTML=
+            x.substr(7,12);
+            document.getElementById('c5').innerHTML=
+            x.replace(/shukhe/g,"dukhe");
+            document.getElementById('c6').innerHTML=
+            x.concat(" ", "kothao e nei, valobasha", " shudhui gada jibonto khotoi");
+            document.getElementById('c7').innerHTML=x.toUpperCase();
+            let a="abc5";
+            document.getElementById('c8').innerHTML=a.padStart(5,"s")
+            document.getElementById('c9').innerHTML=x[2];
+            const mar=a.split("");
+            let text="";
+            for(let i=0; i<mar.length; i++){
+                text +=mar[i]+"<br>";
+            }
+            document.getElementById('c10').innerHTML=text;
+            document.getElementById('c11').innerHTML=x.indexOf("jhore",10);
+            document.getElementById('c12').innerHTML=x.lastIndexOf("na",);
+            document.getElementById('c13').innerHTML=x.match(/na/gi);
+            document.getElementById('c14').innerHTML=x.endsWith("!!!");
+
+        </script>
+        
+        
+    </body>
+</html>
